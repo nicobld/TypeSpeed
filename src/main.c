@@ -146,8 +146,8 @@ void handle_input(){
 }
 
 int main(){
-	if (json_c_version_num() < ((0 << 16) | (16 << 8) | 0)){
-		fprintf(stderr, "minimum required version : json-c 0.16.0\n");
+	if (json_c_version_num() < ((0 << 16) | (15 << 8) | 0)){
+		fprintf(stderr, "minimum required version : json-c 0.16.0, your version : %s\n", json_c_version());
 		return -1;
 	}
 
